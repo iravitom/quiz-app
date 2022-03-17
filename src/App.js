@@ -2,6 +2,7 @@ import "./App.css";
 import Menu from "./components/menu.component";
 import logo from "./assets/logo.png";
 import Quiz from "./components/quiz/quiz.component";
+import EndComponent from "./components/endscreen.component";
 import { useRef, useState } from "react";
 
 import { CurrentStateContext } from "./helpers/contexts";
@@ -27,8 +28,8 @@ function App() {
       >
         {currentState === "menu" && <Menu></Menu>}
         {currentState === "quiz" && <Quiz></Quiz>}
+        {currentState === "finshed" && <EndComponent></EndComponent>}
       </CurrentStateContext.Provider>
-      {score}
     </div>
   );
 }

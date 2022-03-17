@@ -6,13 +6,16 @@ import { CurrentStateContext } from "../../helpers/contexts";
 function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
-  const { score, setScore } = useContext(CurrentStateContext);
+  const { score, setScore, currentState, setCurrentState } =
+    useContext(CurrentStateContext);
 
   const submitAnswer = (inputVal) => {
     setCurrentQuestion(currentQuestion + 1);
     setSelectedAnswer(inputVal);
-    alert(selectedAnswer);
     inputVal === Questions[currentQuestion].answer && setScore(score + 2);
+    if (currentQuestion == Questions.length - 1) {
+      setCurrentState("finshed");
+    }
   };
   return (
     <div className="quiz-component">
