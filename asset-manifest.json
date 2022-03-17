@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/iravitom.github.io/static/css/main.ecf88494.css",
+    "main.js": "/iravitom.github.io/static/js/main.3485cf2a.js",
+    "static/js/787.521516b9.chunk.js": "/iravitom.github.io/static/js/787.521516b9.chunk.js",
+    "static/media/logo.png": "/iravitom.github.io/static/media/logo.3c213a7e350d3625d74b.png",
+    "index.html": "/iravitom.github.io/index.html",
+    "main.ecf88494.css.map": "/iravitom.github.io/static/css/main.ecf88494.css.map",
+    "main.3485cf2a.js.map": "/iravitom.github.io/static/js/main.3485cf2a.js.map",
+    "787.521516b9.chunk.js.map": "/iravitom.github.io/static/js/787.521516b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecf88494.css",
+    "static/js/main.3485cf2a.js"
+  ]
+}
